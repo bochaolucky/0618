@@ -1,0 +1,3 @@
+
+vmlinux:     file format elf32-little
+

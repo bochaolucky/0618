@@ -1,0 +1,15 @@
+!<thin>
+//                                              84        `
+timer-of.o/
+timer-probe.o/
+mmio.o/
+arm_global_timer.o/
+timer-sp804.o/
+versatile.o/
+
+/0              0           0     0     644     2904      `
+/12             0           0     0     644     2156      `
+/27             0           0     0     644     2052      `
+/35             0           0     0     644     6116      `
+/55             0           0     0     644     7376      `
+/70             0           0     0     644     2428      `

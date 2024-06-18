@@ -1,0 +1,53 @@
+!<thin>
+//                                              344       `
+hid-core.o/
+hid-input.o/
+hid-debug.o/
+hid-generic.o/
+hid-a4tech.o/
+hid-apple.o/
+hid-belkin.o/
+hid-cherry.o/
+hid-cypress.o/
+hid-dr.o/
+hid-ezkey.o/
+hid-gyration.o/
+hid-ite.o/
+hid-kensington.o/
+hid-microsoft.o/
+hid-monterey.o/
+hid-pl.o/
+hid-petalynx.o/
+hid-sjoy.o/
+hid-sunplus.o/
+hid-gaff.o/
+hid-tmff.o/
+hid-topseed.o/
+hid-twinhan.o/
+hid-zpff.o/
+
+/0              0           0     0     644     32024     `
+/12             0           0     0     644     49820     `
+/25             0           0     0     644     35104     `
+/38             0           0     0     644     2604      `
+/53             0           0     0     644     4008      `
+/67             0           0     0     644     8796      `
+/80             0           0     0     644     3904      `
+/94             0           0     0     644     3820      `
+/108            0           0     0     644     4168      `
+/123            0           0     0     644     4356      `
+/133            0           0     0     644     3700      `
+/146            0           0     0     644     4868      `
+/162            0           0     0     644     3164      `
+/173            0           0     0     644     3424      `
+/191            0           0     0     644     6536      `
+/208            0           0     0     644     3968      `
+/224            0           0     0     644     3224      `
+/234            0           0     0     644     4532      `
+/250            0           0     0     644     3284      `
+/262            0           0     0     644     3744      `
+/277            0           0     0     644     3580      `
+/289            0           0     0     644     3468      `
+/301            0           0     0     644     5196      `
+/316            0           0     0     644     6388      `
+/331            0           0     0     644     3172      `

@@ -1,0 +1,1 @@
+cmd_drivers/virtio/built-in.o :=  rm -f drivers/virtio/built-in.o; arm-none-eabi-ar rcSTPD drivers/virtio/built-in.o drivers/virtio/virtio.o drivers/virtio/virtio_ring.o drivers/virtio/virtio_mmio.o drivers/virtio/virtio_balloon.o 

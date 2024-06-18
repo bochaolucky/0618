@@ -1,0 +1,349 @@
+ELF Header:
+  Magic:   7f 45 4c 46 01 01 01 00 00 00 00 00 00 00 00 00 
+  Class:                             ELF32
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - System V
+  ABI Version:                       0
+  Type:                              EXEC (Executable file)
+  Machine:                           ARM
+  Version:                           0x1
+  Entry point address:               0x0
+  Start of program headers:          52 (bytes into file)
+  Start of section headers:          1465464 (bytes into file)
+  Flags:                             0x5000200, Version5 EABI, soft-float ABI
+  Size of this header:               52 (bytes)
+  Size of program headers:           32 (bytes)
+  Number of program headers:         2
+  Size of section headers:           40 (bytes)
+  Number of section headers:         22
+  Section header string table index: 21
+
+Section Headers:
+  [Nr] Name              Type            Addr     Off    Size   ES Flg Lk Inf Al
+  [ 0]                   NULL            00000000 000000 000000 00      0   0  0
+  [ 1] .text             PROGBITS        00000000 010000 003400 00  AX  0   0 32
+  [ 2] .rodata           PROGBITS        00003400 013400 000c9b 00   A  0   0  2
+  [ 3] .piggydata        PROGBITS        0000409b 01409b 148849 00   A  0   0  1
+  [ 4] .got.plt          PROGBITS        0014c8e4 15c8e4 00000c 04  WA  0   0  4
+  [ 5] .got              PROGBITS        0014c8f0 15c8f0 000028 00  WA  0   0  4
+  [ 6] .pad              PROGBITS        0014c918 15c918 000008 00  WA  0   0  1
+  [ 7] .bss              NOBITS          0014c920 15c920 00001c 00  WA  0   0  4
+  [ 8] .stack            NOBITS          0014c940 15c920 001000 00  WA  0   0  1
+  [ 9] .comment          PROGBITS        00000000 15c920 000059 01  MS  0   0  1
+  [10] .ARM.attributes   ARM_ATTRIBUTES  00000000 15c979 00002d 00      0   0  1
+  [11] .debug_line       PROGBITS        00000000 15c9a6 002f62 00      0   0  1
+  [12] .debug_info       PROGBITS        00000000 15f908 001bca 00      0   0  1
+  [13] .debug_abbrev     PROGBITS        00000000 1614d2 0007c4 00      0   0  1
+  [14] .debug_aranges    PROGBITS        00000000 161c98 000128 00      0   0  8
+  [15] .debug_str        PROGBITS        00000000 161dc0 000be4 01  MS  0   0  1
+  [16] .debug_ranges     PROGBITS        00000000 1629a8 000128 00      0   0  8
+  [17] .debug_frame      PROGBITS        00000000 162ad0 00036c 00      0   0  4
+  [18] .debug_loc        PROGBITS        00000000 162e3c 00150e 00      0   0  1
+  [19] .symtab           SYMTAB          00000000 16434c 001050 10     20 196  4
+  [20] .strtab           STRTAB          00000000 16539c 000808 00      0   0  1
+  [21] .shstrtab         STRTAB          00000000 165ba4 0000d2 00      0   0  1
+Key to Flags:
+  W (write), A (alloc), X (execute), M (merge), S (strings), I (info),
+  L (link order), O (extra OS processing required), G (group), T (TLS),
+  C (compressed), x (unknown), o (OS specific), E (exclude),
+  y (purecode), p (processor specific)
+
+There are no section groups in this file.
+
+Program Headers:
+  Type           Offset   VirtAddr   PhysAddr   FileSiz MemSiz  Flg Align
+  LOAD           0x010000 0x00000000 0x00000000 0x14c920 0x14d940 RWE 0x10000
+  GNU_STACK      0x000000 0x00000000 0x00000000 0x00000 0x00000 RW  0x10
+
+ Section to Segment mapping:
+  Segment Sections...
+   00     .text .rodata .piggydata .got.plt .got .pad .bss .stack 
+   01     
+
+There is no dynamic section in this file.
+
+There are no relocations in this file.
+
+There are no unwind sections in this file.
+
+Symbol table '.symtab' contains 261 entries:
+   Num:    Value  Size Type    Bind   Vis      Ndx Name
+     0: 00000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 00000000     0 SECTION LOCAL  DEFAULT    1 
+     2: 00003400     0 SECTION LOCAL  DEFAULT    2 
+     3: 0000409b     0 SECTION LOCAL  DEFAULT    3 
+     4: 0014c8e4     0 SECTION LOCAL  DEFAULT    4 
+     5: 0014c8f0     0 SECTION LOCAL  DEFAULT    5 
+     6: 0014c918     0 SECTION LOCAL  DEFAULT    6 
+     7: 0014c920     0 SECTION LOCAL  DEFAULT    7 
+     8: 0014c940     0 SECTION LOCAL  DEFAULT    8 
+     9: 00000000     0 SECTION LOCAL  DEFAULT    9 
+    10: 00000000     0 SECTION LOCAL  DEFAULT   10 
+    11: 00000000     0 SECTION LOCAL  DEFAULT   11 
+    12: 00000000     0 SECTION LOCAL  DEFAULT   12 
+    13: 00000000     0 SECTION LOCAL  DEFAULT   13 
+    14: 00000000     0 SECTION LOCAL  DEFAULT   14 
+    15: 00000000     0 SECTION LOCAL  DEFAULT   15 
+    16: 00000000     0 SECTION LOCAL  DEFAULT   16 
+    17: 00000000     0 SECTION LOCAL  DEFAULT   17 
+    18: 00000000     0 SECTION LOCAL  DEFAULT   18 
+    19: 00000000     0 FILE    LOCAL  DEFAULT  ABS arch/arm/boot/compressed/
+    20: 00000000     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    21: 00000000     0 FUNC    LOCAL  DEFAULT    1 start
+    22: 00000024     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    23: 00000034     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    24: 00000058     0 NOTYPE  LOCAL  DEFAULT    1 not_angel
+    25: 0000007c     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    26: 00000084     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    27: 000000a0     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    28: 0000024c    36 OBJECT  LOCAL  DEFAULT    1 LC0
+    29: 00000280     0 NOTYPE  LOCAL  DEFAULT    1 cache_on
+    30: 000000c8     0 NOTYPE  LOCAL  DEFAULT    1 restart
+    31: 0000019c     0 NOTYPE  LOCAL  DEFAULT    1 wont_overwrite
+    32: 00000930     0 NOTYPE  LOCAL  DEFAULT    1 reloc_code_end
+    33: 00000700     0 NOTYPE  LOCAL  DEFAULT    1 cache_clean_flush
+    34: 000001dc     0 NOTYPE  LOCAL  DEFAULT    1 not_relocated
+    35: 00000660     0 NOTYPE  LOCAL  DEFAULT    1 cache_off
+    36: 00000920     0 NOTYPE  LOCAL  DEFAULT    1 __enter_kernel
+    37: 00000240     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    38: 00000244     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    39: 00000248     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    40: 00000900     0 NOTYPE  LOCAL  DEFAULT    1 __hyp_reentry_vectors
+    41: 0000024c     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    42: 00000270     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    43: 000004ac     0 NOTYPE  LOCAL  DEFAULT    1 call_cache_fn
+    44: 00000288     0 NOTYPE  LOCAL  DEFAULT    1 __armv4_mpu_cache_on
+    45: 000002e0     0 NOTYPE  LOCAL  DEFAULT    1 __armv3_mpu_cache_on
+    46: 0000031c   116 FUNC    LOCAL  DEFAULT    1 __setup_mmu
+    47: 00000390     0 NOTYPE  LOCAL  DEFAULT    1 __armv6_mmu_cache_on
+    48: 000003a4     0 NOTYPE  LOCAL  DEFAULT    1 __armv4_mmu_cache_on
+    49: 000003a4     0 NOTYPE  LOCAL  DEFAULT    1 __arm926ejs_mmu_cache_on
+    50: 00000480     0 NOTYPE  LOCAL  DEFAULT    1 __common_mmu_cache_on
+    51: 000003d8     0 NOTYPE  LOCAL  DEFAULT    1 __armv7_mmu_cache_on
+    52: 0000044c     0 NOTYPE  LOCAL  DEFAULT    1 __fa526_cache_on
+    53: 000004d0   380 OBJECT  LOCAL  DEFAULT    1 proc_types
+    54: 000004d0     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    55: 000004d8     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    56: 000004e4     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    57: 000004ec     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    58: 000004f8     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    59: 00000500     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    60: 000006a0     0 NOTYPE  LOCAL  DEFAULT    1 __armv4_mmu_cache_off
+    61: 0000050c     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    62: 00000514     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    63: 00000688     0 NOTYPE  LOCAL  DEFAULT    1 __armv3_mpu_cache_off
+    64: 000008cc     0 NOTYPE  LOCAL  DEFAULT    1 __armv3_mpu_cache_flush
+    65: 00000520     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    66: 00000528     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    67: 00000668     0 NOTYPE  LOCAL  DEFAULT    1 __armv4_mpu_cache_off
+    68: 00000708     0 NOTYPE  LOCAL  DEFAULT    1 __armv4_mpu_cache_flush
+    69: 00000534     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    70: 0000053c     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    71: 00000844     0 NOTYPE  LOCAL  DEFAULT    1 __armv5tej_mmu_cache_flus
+    72: 00000548     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    73: 00000550     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    74: 0000055c     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    75: 00000564     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    76: 00000860     0 NOTYPE  LOCAL  DEFAULT    1 __armv4_mmu_cache_flush
+    77: 00000570     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    78: 00000578     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    79: 00000584     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    80: 0000058c     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    81: 00000598     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    82: 000005a0     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    83: 000005ac     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    84: 000005b4     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    85: 000005c0     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    86: 000005c8     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    87: 00000748     0 NOTYPE  LOCAL  DEFAULT    1 __fa526_cache_flush
+    88: 000005d4     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    89: 000005dc     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    90: 000005e8     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    91: 000005f0     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    92: 000005fc     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    93: 00000604     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    94: 00000610     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    95: 00000618     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    96: 00000764     0 NOTYPE  LOCAL  DEFAULT    1 __armv6_mmu_cache_flush
+    97: 00000624     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    98: 0000062c     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    99: 000006bc     0 NOTYPE  LOCAL  DEFAULT    1 __armv7_mmu_cache_off
+   100: 00000780     0 NOTYPE  LOCAL  DEFAULT    1 __armv7_mmu_cache_flush
+   101: 00000638     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   102: 00000640     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   103: 00000830     0 NOTYPE  LOCAL  DEFAULT    1 iflush
+   104: 000007a0     0 NOTYPE  LOCAL  DEFAULT    1 hierarchical
+   105: 00000824     0 NOTYPE  LOCAL  DEFAULT    1 finished
+   106: 000007bc     0 NOTYPE  LOCAL  DEFAULT    1 loop1
+   107: 00000818     0 NOTYPE  LOCAL  DEFAULT    1 skip
+   108: 000007f8     0 NOTYPE  LOCAL  DEFAULT    1 loop2
+   109: 000007fc     0 NOTYPE  LOCAL  DEFAULT    1 loop3
+   110: 000008a4     0 NOTYPE  LOCAL  DEFAULT    1 no_cache_id
+   111: 000008cc     0 NOTYPE  LOCAL  DEFAULT    1 __armv3_mmu_cache_flush
+   112: 000008e0     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   113: 000008e8     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   114: 0014c940     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   115: 00000000     0 FILE    LOCAL  DEFAULT  ABS misc.c
+   116: 00000930     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   117: 00000930    48 FUNC    LOCAL  DEFAULT    1 putstr
+   118: 0000098c     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   119: 00000994     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   120: 000009a0     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   121: 000009a4     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   122: 000009c0     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   123: 000009cc     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   124: 000009d8     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   125: 000009dc     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   126: 00000a94     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   127: 0014c920     0 NOTYPE  LOCAL  DEFAULT    7 $d
+   128: 00000010     0 NOTYPE  LOCAL  DEFAULT   17 $d
+   129: 00000000     0 FILE    LOCAL  DEFAULT  ABS decompress.c
+   130: 00000ac0     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   131: 00000ac0   164 FUNC    LOCAL  DEFAULT    1 malloc
+   132: 00000b50     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   133: 00000b64     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   134: 00000b64     8 FUNC    LOCAL  DEFAULT    1 nofill
+   135: 00000b6c   192 FUNC    LOCAL  DEFAULT    1 zlib_updatewindow
+   136: 00000c2c    80 FUNC    LOCAL  DEFAULT    1 free.constprop.0
+   137: 00000c6c     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   138: 00000c7c     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   139: 00001178     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   140: 00001180     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   141: 00001678     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   142: 00001684     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   143: 000027b8     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   144: 00002800     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   145: 00002d0c     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   146: 00003400     0 NOTYPE  LOCAL  DEFAULT    2 $d
+   147: 00003400    62 OBJECT  LOCAL  DEFAULT    2 lext.4103
+   148: 0000343e    62 OBJECT  LOCAL  DEFAULT    2 lbase.4102
+   149: 0000347c    64 OBJECT  LOCAL  DEFAULT    2 dext.4105
+   150: 000034bc    64 OBJECT  LOCAL  DEFAULT    2 dbase.4104
+   151: 000034fc  2048 OBJECT  LOCAL  DEFAULT    2 lenfix.4293
+   152: 00003cfc   128 OBJECT  LOCAL  DEFAULT    2 distfix.4294
+   153: 00003d7c    38 OBJECT  LOCAL  DEFAULT    2 order.4325
+   154: 0014c934     0 NOTYPE  LOCAL  DEFAULT    7 $d
+   155: 000000e4     0 NOTYPE  LOCAL  DEFAULT   17 $d
+   156: 00000000     0 FILE    LOCAL  DEFAULT  ABS arch/arm/boot/compressed/
+   157: 00002d2c     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   158: 00000000     0 FILE    LOCAL  DEFAULT  ABS string.c
+   159: 00002d74     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   160: 00000298     0 NOTYPE  LOCAL  DEFAULT   17 $d
+   161: 00000000     0 FILE    LOCAL  DEFAULT  ABS arch/arm/boot/compressed/
+   162: 00002fc0     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   163: 00003028    52 FUNC    LOCAL  DEFAULT    1 __hyp_stub_do_trap
+   164: 00003054     0 NOTYPE  LOCAL  DEFAULT    1 __hyp_stub_exit
+   165: 00003050     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   166: 00003054     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   167: 00003058     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   168: 0000305c     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   169: 00003064     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   170: 00003068     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   171: 00003074     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   172: 00003078     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   173: 00003080     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   174: 00003084     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   175: 000030a0     0 NOTYPE  LOCAL  DEFAULT    1 __hyp_stub_reset
+   176: 000030a4     0 NOTYPE  LOCAL  DEFAULT    1 __hyp_stub_und
+   177: 000030a8     0 NOTYPE  LOCAL  DEFAULT    1 __hyp_stub_svc
+   178: 000030ac     0 NOTYPE  LOCAL  DEFAULT    1 __hyp_stub_pabort
+   179: 000030b0     0 NOTYPE  LOCAL  DEFAULT    1 __hyp_stub_dabort
+   180: 000030b4     0 NOTYPE  LOCAL  DEFAULT    1 __hyp_stub_trap
+   181: 000030b8     0 NOTYPE  LOCAL  DEFAULT    1 __hyp_stub_irq
+   182: 000030bc     0 NOTYPE  LOCAL  DEFAULT    1 __hyp_stub_fiq
+   183: 000030c0     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   184: 00000000     0 FILE    LOCAL  DEFAULT  ABS arch/arm/boot/compressed/
+   185: 000030c8     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   186: 000033bc    16 FUNC    LOCAL  DEFAULT    1 Ldiv0
+   187: 00000000     0 FILE    LOCAL  DEFAULT  ABS arch/arm/boot/compressed/
+   188: 000033cc     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   189: 00000000     0 FILE    LOCAL  DEFAULT  ABS arch/arm/boot/compressed/
+   190: 000033e8     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   191: 00000000     0 FILE    LOCAL  DEFAULT  ABS 
+   192: 0014c8e4     0 OBJECT  LOCAL  DEFAULT    4 _GLOBAL_OFFSET_TABLE_
+   193: 0000409b     0 NOTYPE  LOCAL  DEFAULT    3 $d
+   194: 00003da2     0 NOTYPE  LOCAL  DEFAULT    2 $d
+   195: 00003e51     0 NOTYPE  LOCAL  DEFAULT    2 $d
+   196: 00002b0c   544 FUNC    GLOBAL DEFAULT    1 do_decompress
+   197: 000033cc    28 FUNC    GLOBAL DEFAULT    1 __ashldi3
+   198: 0014c8f0     0 NOTYPE  GLOBAL DEFAULT    4 _got_start
+   199: 016f2818     0 NOTYPE  GLOBAL DEFAULT  ABS _magic_sig
+   200: 00002e50    76 FUNC    GLOBAL DEFAULT    1 memmove
+   201: 0014c920     4 OBJECT  GLOBAL DEFAULT    7 __stack_chk_guard
+   202: 00002fc0     0 FUNC    GLOBAL DEFAULT    1 __hyp_stub_install
+   203: 0014c8e4     0 NOTYPE  GLOBAL DEFAULT    4 _etext
+   204: 0000305c    16 FUNC    GLOBAL DEFAULT    1 __hyp_set_vectors
+   205: 000033e8     8 FUNC    GLOBAL DEFAULT    1 __bswapsi2
+   206: 0014c8e4     0 NOTYPE  GLOBAL DEFAULT    3 input_data_end
+   207: 000030a0    32 FUNC    GLOBAL DEFAULT    1 __hyp_stub_vectors
+   208: 0000168c   128 FUNC    GLOBAL DEFAULT    1 zlib_inflateReset
+   209: 00002d74   220 FUNC    GLOBAL DEFAULT    1 memcpy
+   210: 0014c938     4 OBJECT  GLOBAL DEFAULT    7 malloc_ptr
+   211: 00001180  1284 FUNC    GLOBAL DEFAULT    1 inflate_fast
+   212: 000030c8   156 FUNC    GLOBAL DEFAULT    1 __udivsi3
+   213: 000009a4    40 FUNC    GLOBAL DEFAULT    1 __stack_chk_guard_setup
+   214: 0014c918     0 NOTYPE  GLOBAL DEFAULT    5 _got_end
+   215: 0000170c    88 FUNC    GLOBAL DEFAULT    1 zlib_inflateInit2
+   216: 000009dc   228 FUNC    GLOBAL DEFAULT    1 decompress_kernel
+   217: 0000409b     0 NOTYPE  GLOBAL DEFAULT    3 input_data
+   218: 000009cc    16 FUNC    GLOBAL DEFAULT    1 __stack_chk_fail
+   219: 00002918   500 FUNC    GLOBAL DEFAULT    1 zlib_inflateIncomp
+   220: 00002ebc    48 FUNC    GLOBAL DEFAULT    1 strnlen
+   221: 00000c7c  1284 FUNC    GLOBAL DEFAULT    1 zlib_inflate_table
+   222: 00012ce4     0 NOTYPE  GLOBAL DEFAULT  ABS _kernel_bss_size
+   223: 00001764  4496 FUNC    GLOBAL DEFAULT    1 zlib_inflate
+   224: 00003164   160 FUNC    GLOBAL DEFAULT    1 __umodsi3
+   225: 00003208   204 FUNC    GLOBAL DEFAULT    1 __aeabi_idiv
+   226: 0014c920     0 NOTYPE  GLOBAL DEFAULT  ABS _magic_end
+   227: 00002f38    48 FUNC    GLOBAL DEFAULT    1 memchr
+   228: 00000000     0 NOTYPE  GLOBAL DEFAULT    1 _start
+   229: 0014c920     0 NOTYPE  GLOBAL DEFAULT    6 _edata_real
+   230: 0014c934     4 OBJECT  GLOBAL DEFAULT    7 malloc_count
+   231: 00001684     8 FUNC    GLOBAL DEFAULT    1 zlib_inflate_workspacesiz
+   232: 000033f0    16 FUNC    GLOBAL DEFAULT    1 __bswapdi2
+   233: 00002eec    44 FUNC    GLOBAL DEFAULT    1 memcmp
+   234: 0000307c    12 FUNC    GLOBAL DEFAULT    1 __hyp_reset_vectors
+   235: 00000000     0 NOTYPE  GLOBAL DEFAULT    1 _text
+   236: 0014c920     0 NOTYPE  GLOBAL DEFAULT    7 __bss_start
+   237: 00002f94    24 FUNC    GLOBAL DEFAULT    1 memset
+   238: 00000994    16 FUNC    GLOBAL DEFAULT    1 __div0
+   239: 00002fac    12 FUNC    GLOBAL DEFAULT    1 __memzero
+   240: 000030c8   156 FUNC    GLOBAL DEFAULT    1 __aeabi_uidiv
+   241: 00002d2c    72 FUNC    GLOBAL DEFAULT    1 putc
+   242: 00003208   204 FUNC    GLOBAL DEFAULT    1 __divsi3
+   243: 0014c924     4 OBJECT  GLOBAL DEFAULT    7 free_mem_end_ptr
+   244: 00002fc0   104 FUNC    GLOBAL DEFAULT    1 __hyp_stub_install_second
+   245: 00002f18    32 FUNC    GLOBAL DEFAULT    1 strcmp
+   246: 00000960    52 FUNC    GLOBAL DEFAULT    1 error
+   247: 000033cc    28 FUNC    GLOBAL DEFAULT    1 __aeabi_llsl
+   248: 0014c92c     4 OBJECT  GLOBAL DEFAULT    7 output_data
+   249: 0000338c    24 FUNC    GLOBAL DEFAULT    1 __aeabi_uidivmod
+   250: 0014c920     0 NOTYPE  GLOBAL DEFAULT    6 _edata
+   251: 0014c93c     0 NOTYPE  GLOBAL DEFAULT    7 _end
+   252: 0000306c    16 FUNC    GLOBAL DEFAULT    1 __hyp_soft_restart
+   253: 000032d4   184 FUNC    GLOBAL DEFAULT    1 __modsi3
+   254: 0014c930     4 OBJECT  GLOBAL DEFAULT    7 __machine_arch_type
+   255: 00002e9c    32 FUNC    GLOBAL DEFAULT    1 strlen
+   256: 00002f68    44 FUNC    GLOBAL DEFAULT    1 strchr
+   257: 0014c928     4 OBJECT  GLOBAL DEFAULT    7 free_mem_ptr
+   258: 000028f4    36 FUNC    GLOBAL DEFAULT    1 zlib_inflateEnd
+   259: 000033a4    24 FUNC    GLOBAL DEFAULT    1 __aeabi_idivmod
+   260: 00000000     0 NOTYPE  GLOBAL DEFAULT    1 _magic_start
+
+No version information found in this file.
+Attribute Section: aeabi
+File Attributes
+  Tag_CPU_name: "7-A"
+  Tag_CPU_arch: v7
+  Tag_CPU_arch_profile: Application
+  Tag_ARM_ISA_use: Yes
+  Tag_THUMB_ISA_use: Thumb-2
+  Tag_FP_arch: VFPv2
+  Tag_ABI_PCS_wchar_t: 2
+  Tag_ABI_FP_denormal: Needed
+  Tag_ABI_FP_exceptions: Needed
+  Tag_ABI_FP_number_model: IEEE 754
+  Tag_ABI_align_needed: 8-byte
+  Tag_ABI_enum_size: int
+  Tag_CPU_unaligned_access: v6

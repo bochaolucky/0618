@@ -1,0 +1,1 @@
+cmd_drivers/crypto/virtio/virtio_crypto.o := rm -f drivers/crypto/virtio/virtio_crypto.o; arm-none-eabi-ar rcSTPD drivers/crypto/virtio/virtio_crypto.o drivers/crypto/virtio/virtio_crypto_algs.o drivers/crypto/virtio/virtio_crypto_mgr.o drivers/crypto/virtio/virtio_crypto_core.o

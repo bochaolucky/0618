@@ -1,0 +1,61 @@
+!<thin>
+//                                              422       `
+mtdcore.o/
+mtdsuper.o/
+mtdconcat.o/
+mtdpart.o/
+mtdchar.o/
+ofpart.o/
+cmdlinepart.o/
+chips/chipreg.o/
+chips/cfi_probe.o/
+chips/cfi_util.o/
+chips/cfi_cmdset_0002.o/
+chips/cfi_cmdset_0001.o/
+chips/gen_probe.o/
+chips/map_ram.o/
+maps/physmap.o/
+maps/physmap_of_core.o/
+maps/plat-ram.o/
+ubi/vtbl.o/
+ubi/vmt.o/
+ubi/upd.o/
+ubi/build.o/
+ubi/cdev.o/
+ubi/kapi.o/
+ubi/eba.o/
+ubi/io.o/
+ubi/wl.o/
+ubi/attach.o/
+ubi/misc.o/
+ubi/debug.o/
+
+/0              0           0     0     644     21220     `
+/11             0           0     0     644     5192      `
+/23             0           0     0     644     9244      `
+/36             0           0     0     644     13196     `
+/47             0           0     0     644     15012     `
+/58             0           0     0     644     5724      `
+/68             0           0     0     644     5864      `
+/83             0           0     0     644     1692      `
+/100            0           0     0     644     5244      `
+/119            0           0     0     644     5200      `
+/137            0           0     0     644     37896     `
+/162            0           0     0     644     27436     `
+/187            0           0     0     644     3628      `
+/206            0           0     0     644     3712      `
+/223            0           0     0     644     4948      `
+/239            0           0     0     644     7684      `
+/263            0           0     0     644     5784      `
+/280            0           0     0     644     9216      `
+/292            0           0     0     644     11924     `
+/303            0           0     0     644     7876      `
+/314            0           0     0     644     21780     `
+/327            0           0     0     644     16580     `
+/339            0           0     0     644     10828     `
+/351            0           0     0     644     19052     `
+/362            0           0     0     644     19864     `
+/372            0           0     0     644     25840     `
+/382            0           0     0     644     20256     `
+/396            0           0     0     644     3552      `
+/408            0           0     0     644     12348     `
